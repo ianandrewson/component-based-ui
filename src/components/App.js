@@ -1,21 +1,6 @@
 import React from 'react';
 import styles from './App.css';
-
-const Header = () => (
-  <header className={styles.Header}>
-    <nav>
-      <ul>
-        <li><a className={styles.active} href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Documentation</a></li>
-      </ul>
-    </nav>
-    <section>
-      <h1>The Rick And Morty Api</h1>
-      <h2>Hey, did you ever want to hold a Terry fold?</h2>
-    </section>
-  </header>
-);
+import Header from './Header.js';
 
 const Footer = () => (
   <footer className={styles.Footer}>
