@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import characterStyle from './Character.css';
+import styles from './characterList.css';
 import PropTypes from 'prop-types';
 
 export default class Character extends Component {
@@ -18,14 +18,31 @@ export default class Character extends Component {
 
     return (
       <>
-        <section>
-          <p>Name: {name} </p>
-          <p>Status: {status} </p>
-          <p>Species: {species} </p>
-          <p>Gender: {gender} </p>
-          <p>Origin: {origin} </p>
-          <p>Last Location: {lastLocation} </p>
-          <img href={img} ></img>
+        <section className={styles.character}>
+          <div className={styles.imageHolder}>
+            <img src={img} ></img>
+            <div className={styles.nameHolder}>
+              <p>{name} </p>
+            </div>
+          </div>
+          <div className={styles.textHolder}>
+            
+            <div className={styles.textLine}> 
+              <span>Status</span> <p>{status} </p>
+            </div>
+            <div className={styles.textLine}> 
+              <span>Species</span> <p>{species} </p>
+            </div>
+            <div className={styles.textLine}> 
+              <span>Gender</span> <p>{gender} </p>
+            </div>
+            <div className={styles.textLine}> 
+              <span>Origin</span> <p>{origin} </p>
+            </div>
+            <div className={styles.textLine}> 
+              <span>Last Location</span> <p>{lastLocation} </p>
+            </div>
+          </div>
         </section>
       </>
     );
