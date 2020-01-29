@@ -1,0 +1,63 @@
+.characterList {
+  display: grid;
+  background-color: #202329;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.imageHolder {
+  position: relative;
+}
+
+.imageHolder > img {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.textLine {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 5px;
+  border-bottom: 1px solid;
+  margin: 5px;
+  color: #9e9e9e;
+}
+
+.textLine > span {
+  color: #9e9e9e;
+}
+
+.textLine > p {
+  color: #ff9800;
+}
+
+.textHolder > p {
+  text-align: right;
+}
+
+.nameHolder {
+  position: absolute;
+  display: flex;
+  background-color:rgb(32, 35, 41);
+  opacity: .8;
+  width: 100%;
+  height: 75px;
+  bottom: 0px;
+  font-size: 24px;
+}
+
+.nameHolder > p {
+  opacity: 1;
+  color: white;
+  align-self: center;
+}
+
+.character {
+  background-color: #201616;
+  max-width: 300px;
+  border-radius: 10px;
+}
