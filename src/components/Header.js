@@ -1,4 +1,4 @@
-import React, { Component } from 'React';
+import React, { Component } from 'react';
 import styles from './App.css';
 
 export default class Header extends Component {
